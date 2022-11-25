@@ -1,0 +1,27 @@
+DECLARE
+a NUMBER(4,2);
+b NUMBER(4,2);
+c NUMBER(4,2);
+d NUMBER(4,2);
+e NUMBER(4,2);
+f NUMBER(22,2);
+g NUMBER(22,2);
+
+BEGIN
+a := &a;
+b := &b;
+c := &c;
+d := &d;
+e := &e;
+
+f = = a + b + c + d + e;
+g = f/5;
+
+DBMS_OUTPUT.PUT_LINE('Average Marks' || g);
+if g < 50 then
+DBMS_OUTPUT.PUT_LINE('PASSED');
+else
+DBMS_OUTPUT.PUT_LINE('FAILED');
+end if;
+end;
+\

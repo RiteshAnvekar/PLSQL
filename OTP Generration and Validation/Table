@@ -1,0 +1,5 @@
+CREATE TABLE OTP_Deatils
+(Mob_num NUMBER(10),
+OTP NUMBER(6),
+OTP_Gen_time TIMESTAMP,
+OTP_exp_time TIMESTAMP);

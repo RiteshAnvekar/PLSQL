@@ -1,0 +1,10 @@
+DECLARE
+
+Message VARCHAR2(100);
+
+BEGIN
+
+OTP_Valid(9876543210, 123422 , Message);
+DBMS_Output.put_Line(Message);
+
+END;

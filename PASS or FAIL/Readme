@@ -1,0 +1,9 @@
+PASS (or) FAIL :
+
+This project aims to develop a PLSQL code to check if the average marks scored by the student are above the Passing average
+
+
+Project:
+
+The code consists of 3 parts where in the first part we declare 7 variables of which 5 are used for fetching marks scored by students in 5 subjects and the other 2 variables are for performing calculations
+In the second section, we first fetch the marks scored by the student in all 5 subjects. Once all the marks are fetched we add up the marks scored in all the subjects and calculate an average of the marks. This calculated average is then compared with a threshold or passing average value. If the student’s average score is above the threshold the student is considered to pass the exam else he is considered to fail to score the passing marks.

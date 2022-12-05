@@ -5,6 +5,7 @@ The project aims to create a PLSQL code to generate and validate OTP linked to a
 
 
 Project:
+
 We have 5 sections in the code:
 
 1.	Table: It has the code to create a table with 4 columns which are Mobile number, OTP, Valid from time, and Valid to time.

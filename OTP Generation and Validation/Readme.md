@@ -1,5 +1,6 @@
 
 OTP Generation and Validation:
+
 The project aims to create a PLSQL code to generate and validate OTP linked to a mobile number.
 
 

@@ -1,0 +1,10 @@
+DECLARE
+
+Otp NUMBER;
+
+BEGIN
+
+OTP_Gen('9876543210',Otp);
+DBMS_Output.put_line(Otp);
+
+END;

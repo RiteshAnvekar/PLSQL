@@ -1,0 +1,17 @@
+CREATE OR REPLACE PROCEDURE OTP_Gen(p_phone in Number, p_Otp Out Number)
+AS
+BEGIN
+
+select trunc(DBMS_RANDOM.VALUE(100000,999999)) into p_Otp from Dual;
+
+Insert into OTP_Deatils(Mob_num,OTP,OTP_Gen_time,OTP_exp_time)
+values(p_phone, p_Otp, sysdate,(sysdate + 1/24));                                                     --- (1/24 adds 60 mins in existing system time)
+
+COMMIT;
+END
+\
+
+
+
+
+

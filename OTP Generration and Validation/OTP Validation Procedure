@@ -1,0 +1,22 @@
+CREATE OR REPLACE PROCEDURE OTP_Valid(p_Phone in NUMBER, p_OTP in NUMBER, P_Msg out VARCHAR2)
+AS
+DECLARE
+
+Val NUMBER;
+
+BEGIN
+
+select count(1) into val
+from OTP_Deatils
+where Mob_num = p_Phone and OTP = p_OTP 
+and OTP_Gen_time < sysdate and OTP_exp_time > sysdate;
+
+IF Val = 1 THEN
+p_Msg := 'OTP is Valid';
+
+ELSE
+p_Msg := 'OTP is invalid';
+
+END IF;
+END;
+\
